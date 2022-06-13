@@ -1,0 +1,10 @@
+shodan search 'http.favicon.hash:-305179312'  --fields ip_str,port --limit 500 --separator ":" | sed 's/.$//'
+shodan search 'http.component:"atlassian confluence"'  --fields ip_str,port --limit 500 --separator ":" | sed 's/.$//'
+shodan search 'http.title:"Log In - Confluence" 200'  --fields ip_str,port --limit 500 --separator ":" | sed 's/.$//'
+shodan search 'http.component:"atlassian confluence" http.title:"Log In - Confluence" 200'  --fields ip_str,port --limit 500 --separator ":" | sed 's/.$//'
+shodan search 'http.component:"atlassian confluence"'  --fields ip_str,port --limit 500 --separator ":" | sed 's/.$//'
+shodan search 'http.favicon.hash:-305179312 200'  --fields ip_str,port --limit 500 --separator ":" | sed 's/.$//'
+
+
+
+
